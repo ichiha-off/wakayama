@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "reset-css": "^5.0.1",
+    "standard": "^16.0.3",
     "vue": "^3.0.0"
   },
   "devDependencies": {
@@ -20,7 +22,7 @@
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0-0",
     "sass": "^1.26.5",
-    "sass-loader": "^8.0.2"
+    "sass-loader": "^10.1.1"
   },
   "eslintConfig": {
     "root": true,
