@@ -1,0 +1,33 @@
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+.button {
+  width: 100%;
+  text-align: center;
+  a {
+    background-color: $cMainOrange;
+    background-image: url(../assets/right-arrow.svg);
+    background-position: right 24px center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    display: inline-block;
+    padding: 8px 48px 8px 24px;
+    color: $cTextW;
+    font-size: 16px;
+    text-decoration: none;
+  }
+}
+
+.about,
+.daily {
+  &__inner {
+    @extend .flex;
+  }
+}

@@ -1,0 +1,30 @@
+.header {
+  height: 120px;
+  &__inner {
+    margin: 0 56px 0 64px;
+  }
+  &__nav {
+    display: block;
+  }
+}
+
+.mobile-menu__btn {
+  display: none;
+}
+
+.logo {
+  font-size: 24px;
+  &__img {
+    width: 32px;
+    margin-right: 4px;
+    vertical-align: bottom;
+  }
+}
+
+.mobile-menu__btn {
+  display: none;
+}
+
+.top-page {
+  padding-top: 120px;
+}

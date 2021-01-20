@@ -1,1 +1,9 @@
-@import "@/styles/_variables.scss";
+@import "@/styles/base";
+
+@media (min-width: 600px) {
+  @import "@/styles/600up";
+}
+
+@media (min-width: 960px) {
+  @import "@/styles/960up";
+}
