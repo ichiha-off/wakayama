@@ -34,7 +34,7 @@ export default {
   &__headline {
     text-align: center;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 700;
   }
   &__inner {
     display: flex;

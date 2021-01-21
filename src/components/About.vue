@@ -50,8 +50,7 @@ export default {
       line-height: 1.2;
     }
     > .title,
-    > .text,
-    > .button {
+    > .text {
       margin-top: 16px;
     }
   }

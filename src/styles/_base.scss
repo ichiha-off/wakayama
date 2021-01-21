@@ -11,6 +11,7 @@ button {
 .button {
   width: 100%;
   text-align: center;
+  margin-top: 32px;
   a {
     background-color: $cMainOrange;
     background-image: url(../assets/right-arrow.svg);
@@ -18,7 +19,7 @@ button {
     background-repeat: no-repeat;
     border-radius: 8px;
     display: inline-block;
-    padding: 8px 48px 8px 24px;
+    padding: 12px 48px 12px 24px;
     color: $cTextW;
     font-size: 16px;
     text-decoration: none;

@@ -44,3 +44,35 @@
     }
   }
 }
+
+.notice {
+  margin: 200px 0 0;
+  &__headline {
+    font-size: 32px;
+  }
+  &__inner {
+    margin-top: 64px;
+  }
+  &__card {
+    &:nth-child(n + 2) {
+      margin-top: 32px;
+    }
+    &__img {
+      width: min(25%, 120px);
+      height: 120px;
+    }
+    &__texts {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 40px;
+    }
+    &__date {
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+  }
+  > .button {
+    margin-top: 64px;
+  }
+}
