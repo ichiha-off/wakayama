@@ -3,20 +3,23 @@
   <main class="main-content">
     <About/>
     <Daily/>
+    <Information/>
   </main>
 </template>
 
 <script>
 import 'reset-css';
-import TopPage from './components/TopPage.vue'
+import TopPage from '@/components/TopPage';
 import About from '@/components/About';
 import Daily from '@/components/Daily';
+import Information from '@/components/Information';
 
 export default {
   components: { 
     TopPage,
     About,
     Daily,
+    Information
   },
   name: 'App',
 }
