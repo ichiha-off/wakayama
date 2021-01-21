@@ -5,6 +5,7 @@
     <daily/>
     <information/>
     <notice/>
+    <contact/>
   </main>
 </template>
 
@@ -14,7 +15,8 @@ import TopPage from '@/components/TopPage';
 import About from '@/components/About';
 import Daily from '@/components/Daily';
 import Information from '@/components/Information';
-import Notice from './components/Notice.vue';
+import Notice from '@/components/Notice';
+import Contact from '@/components/Contact';
 
 export default {
   components: { 
@@ -23,6 +25,7 @@ export default {
     Daily,
     Information,
     Notice,
+    Contact,
   },
   name: 'App',
 }
