@@ -49,7 +49,7 @@ export default {
           trigger: ".about__texts",
           start: "top 50%",
           end: "bottom 25%",
-          toggleActions: "restart none none none",
+          toggleActions: "play none none none",
         }
       })
       .to(".about__texts > h3", {
