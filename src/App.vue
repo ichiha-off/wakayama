@@ -46,7 +46,6 @@ export default {
       gsap.timeline({
         defaults: { ease: "power2.out", duration: 0.6 },
         scrollTrigger: {
-          markers: true,
           trigger: ".about__texts",
           start: "top 50%",
           end: "bottom 25%",

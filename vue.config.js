@@ -4,9 +4,6 @@ module.exports = { // eslint-disable-line
       sass: {
         additionalData: '@import "@/styles/_variables.scss";'
       }
-    },
-    build: {
-      transpile: ['gsap']
     }
   }
 };  // eslint-disable-line
