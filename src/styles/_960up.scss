@@ -79,3 +79,14 @@
     @extend %margin-960up;
   }
 }
+
+.footer {
+  margin-top: 32px;
+  &__inner {
+    margin: 0 auto;
+  }
+
+  &__texts {
+    margin-left: 40px;
+  }
+}

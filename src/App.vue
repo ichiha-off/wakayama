@@ -1,12 +1,13 @@
 <template>
   <TopPage/>
   <main class="main-content">
-    <about/>
-    <daily/>
-    <information/>
-    <notice/>
-    <contact/>
+    <About/>
+    <Daily/>
+    <Information/>
+    <Notice/>
+    <Contact/>
   </main>
+  <SharedFooter/>
 </template>
 
 <script>
@@ -17,6 +18,7 @@ import Daily from '@/components/Daily';
 import Information from '@/components/Information';
 import Notice from '@/components/Notice';
 import Contact from '@/components/Contact';
+import SharedFooter from '@/components/SharedFooter';
 
 export default {
   components: { 
@@ -26,6 +28,7 @@ export default {
     Information,
     Notice,
     Contact,
+    SharedFooter,
   },
   name: 'App',
 }
