@@ -31,6 +31,7 @@ export default {
 <style lang="scss">
 .info {
   margin: 80px 24px 0;
+  overflow: hidden;
   &__headline {
     text-align: center;
     font-size: 24px;

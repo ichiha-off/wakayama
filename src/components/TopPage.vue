@@ -1,5 +1,5 @@
 <template>
-  <header class="header ">
+  <header class="header">
     <div class="header__inner">
       <div class="logo">
         <img class="logo__img" src="../assets/wakayama-logo.svg" alt="logo-image">
@@ -22,6 +22,35 @@
       </button>
     </div>
   </header>
+  <nav class="mobile-menu">
+    <ul class="mobile-menu__main">
+      <li class="mobile-menu__item">
+        <a href="#" class="mobile-menu__link">
+          園について
+        </a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="#" class="mobile-menu__link">
+          1日の流れ
+        </a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="#" class="mobile-menu__link">
+          入園情報
+        </a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="#" class="mobile-menu__link">
+          お知らせ
+        </a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="#" class="mobile-menu__link">
+          お問い合わせ
+        </a>
+      </li>
+    </ul>
+  </nav>
   <div class="top-page">
     <picture>
       <source media="(min-width: 960px)" srcset="@/assets/top-img-pc.png">
@@ -90,11 +119,13 @@ export default {
 }
 
 .logo {
-    font-size: 16px;
+  font-size: 16px;
+  transition: transform 0.6s;
+  transform-origin: left;
   &__img {
     width: 1.6rem;
     margin-right: 4px;
-    vertical-align: bottom;
+    vertical-align: text-bottom;
   }
   > span {
     color: #373737;
@@ -102,20 +133,97 @@ export default {
   }
 }
 
-.mobile-menu__btn {
-  background-color: unset;
-  > span {
-    background-color: black;
-    width: 32px;
-    height: 1px;
-    display: block;
-    margin-bottom: 6px;
-    &:nth-child(2) {
-      width: 24px;
-      margin-left: auto;
+.mobile-menu {
+  position: fixed;
+  top: 64px;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: $cSubOrange;
+  transform: scaleY(0);
+  transform-origin: top;
+  opacity: 0;
+  transition: all 0.6s;
+  z-index: 200;
+  > .logo {
+    height: 64px;
+    line-height: 64px;
+    font-size: 24px;
+    margin-left: 24px;
+    > img {
+      width: 1.6em;
+      margin-right: 4px;
+      vertical-align: text-bottom;
     }
-    &:last-child {
-      margin: 0;
+  }
+  &__item {
+    margin: 40px 0 40px 24px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-30px);
+    transition: transform 0.4s, opacity 0.3s;
+  }
+  &__link {
+    font-size: 24px;
+    color: $cTextB;
+    text-decoration: none;
+  }
+  &__btn {
+    background-color: unset;
+    z-index: 300;
+    > span {
+      background-color: black;
+      width: 32px;
+      height: 1px;
+      display: block;
+      margin-bottom: 6px;
+      transition: transform 0.6s;
+      &:nth-child(2) {
+        width: 24px;
+        margin-left: auto;
+      }
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.menu-open {
+  .mobile-menu {
+    transform: scaleY(1);
+    opacity: 1;
+    &__btn {
+      & > span {
+        &:nth-child(1) {
+          transition-delay: 70ms;
+          transform: translateY(7px) rotate(135deg);
+        }
+        &:nth-child(2) {
+          transition-delay: 0s;
+          transform: translateX(-18px) scaleX(0);
+        }
+        &:nth-child(3) {
+          transition-delay: 140ms;
+          transform: translateY(-7px) rotate(-135deg);
+        }
+      }
+    }
+    &__item {
+      transform: none;
+      opacity: 1;
+      visibility: visible;
+      @for $i from 1 through 5 {
+        &:nth-child(#{$i}) {
+          transition-delay: $i * 0.07s;
+        }
+      }
+    }
+  }
+  .header {
+    .logo {
+      transform: scale(1.6);
+      transform-origin: left;
     }
   }
 }
@@ -125,6 +233,7 @@ export default {
   background-color: $cSubOrange;
   padding-top: 64px;
   text-align: right;
+  overflow: hidden;
   &__img {
     width: calc(100% - 16px);
     height: 100%;
