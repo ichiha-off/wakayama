@@ -26,6 +26,11 @@ button {
   }
 }
 
+.main-content,
+.footer {
+  color: $cTextB;
+}
+
 .about,
 .daily {
   &__inner {

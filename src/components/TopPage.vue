@@ -27,6 +27,10 @@
       <source media="(min-width: 960px)" srcset="@/assets/top-img-pc.png">
       <img src="@/assets/top-img.png" alt="top-image" class="top-page__img">
     </picture>
+    <div class="scroll">
+      <img class="scroll__downarrow" src="@/assets/down-arrow.svg" />
+      <span class="scroll__scrolltext">scroll</span>
+    </div>
     <div class="top-page__concept__area">
       <div class="top-page__concept__messeage">
         <span>のびのびと、</span>

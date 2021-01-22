@@ -13,7 +13,7 @@
         </div>
         <div class="footer__texts__item">
           <span>住所</span>
-          〒111-1111 和歌山県和歌山市1-1-1
+          〒111-1111 和歌山県和歌山市 1-1-1
         </div>
         <div class="footer__texts__item">
           <span>TEL</span>

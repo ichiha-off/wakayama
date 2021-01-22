@@ -37,6 +37,10 @@
   }
 }
 
+.scroll {
+  display: block;
+}
+
 .about,
 .daily {
   width: min(100%, 1080px);
@@ -120,8 +124,12 @@
     }
   }
 
+  &__texts {
+    width: 40%;
+  }
+
   &__copyright {
-    padding: 32px 0;
+    padding: 64px 0 0 0;
     font-size: 12px;
   }
 }

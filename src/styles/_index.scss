@@ -1,4 +1,6 @@
 @import "@/styles/base";
+@import "@/styles/mixin";
+@import "@/styles/scroll-animation";
 
 @media (min-width: 600px) {
   @import "@/styles/600up";
